@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<Title>Index: SouthBay Crafters</Title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="Js/jquery-3.6.0.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<script src="https://use.fontawesome.com/3aa07dfa6e.js"></script>
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"><!--for Hamburger Menu-->
+	<link rel="stylesheet" href="css/hamburgerStyle.css">	
+	 <link href="css/cart.css" rel="stylesheet" type="text/css">
+	 <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+	 <link href="css/smart_cart.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="container">
+		<div id="mHeader" class="mobile" >
+			<h1>South Bay Crafters</h1>
+			<div class="humburger" id="hambuger_menu">
+			  <div class="line"></div>
+			  <div class="line"></div>
+			  <div class="line"></div>
+			</div>
+			<!--main menu body-->
+			<section class="menu_body" id="menubody">
+			  <div class="menu_body__item_wrapper">
+			<!--    menu list-->
+				<ul class="menu_list">				 
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>			
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li id="signIn">Sign In</li>					
+
+				</ul>
+			  </div>
+			</section>
+		</div>
+		<header class="tab-desk">
+			<h1>South Bay Crafters</h1>
+			<button id="myBtn">Sign In</button>
+			
+		</header>
+		<nav class="tab-desk">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>			
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>			
+		</nav>
+		<main>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<form>
+						<p>
+							<label for="username">Username:</label>
+							<input type="text" name="username" id="username">
+						</p>
+						<p>
+							<label for="password">Password: </label>
+							<input type="text" name="password" id="password">
+						</p>
+						<p class="button">
+							<input type="submit" name="button" id="button" value="Submit" >
+						</p>
+					</form>
+				 </div>
+			</div>
+			
+			 <section class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3>Add items to your cart</h3>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<!-- BEGIN PRODUCTS -->
+									<div class="col-md-4 col-sm-6">
+										<div class="sc-product-item thumbnail">
+											<img data-name="product_image" src="Images/wood/bunny_thumbnail.jpg" alt="...">
+											<div class="caption">
+												<h4 data-name="product_name">Bunny</h4>
+												<p data-name="product_desc">Easter bunnies trio</p>
+												<hr class="line">
+												<div class="checkbox">
+														<label>
+															<input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+														</label>
+													</div>
+												<div>													
+													<div class="form-group2">
+														<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+													</div>
+													<strong class="price pull-left">$20.00</strong>
+
+													<input name="product_price" value="20.00" type="hidden">
+													<input name="product_id" value="12" type="hidden">
+													<button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+										</div>
+									</div>
+									<!--Next Product-->
+									<div class="col-md-4 col-sm-6">
+										<div class="sc-product-item thumbnail">
+											<img data-name="product_image" src="Images/wood/crane_thumbnail.jpg" alt="...">
+											<div class="caption">
+												<h4 data-name="product_name">Crane </h4>
+												<p data-name="product_desc">A pull string crane toy</p>
+
+												<hr class="line">
+												<div>
+													
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+														</label>
+													</div>
+													<div class="form-group2">
+														<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+													</div>
+													<strong class="price pull-left">$15.00</strong>
+
+													<input name="product_price" value="15.00" type="hidden">
+													<input name="product_id" value="145" type="hidden">
+													<button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+										</div>
+									</div>
+									<!--Next Product-->
+									<div class="col-md-4 col-sm-6">
+										<div class="sc-product-item thumbnail">
+											<img data-name="product_image" src="Images/wood/plane_thumbnail.jpg" alt="...">
+											<div class="caption">
+												<h4 data-name="product_name">Plane</h4>
+												<p data-name="product_desc">A wooden plane toy</p>
+
+												<hr class="line">
+												<div>
+													
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+														</label>
+													</div>
+													<div class="form-group2">
+														<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+													</div>
+													<strong class="price pull-left">$25.00</strong>
+
+													<input name="product_price" value="25.00" type="hidden">
+													<input name="product_id" value="146" type="hidden">
+													<button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+										</div>
+									</div>
+									<!--Next Product-->
+									<div class="col-md-4 col-sm-6">
+										<div class="sc-product-item thumbnail">
+											<img data-name="product_image" src="Images/wood/duck_thumbnail.jpg" alt="...">
+											<div class="caption">
+												<h4 data-name="product_name">Duck </h4>
+												<p data-name="product_desc">Tinted wooden duck</p>
+
+												<hr class="line">
+												<div>
+													
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+														</label>
+													</div>
+													<div class="form-group2">
+														<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+													</div>
+													<strong class="price pull-left">$15.00</strong>
+
+													<input name="product_price" value="15.00" type="hidden">
+													<input name="product_id" value="147" type="hidden">
+													<button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+										</div>
+									</div>
+									<!--Next Product-->
+									<div class="col-md-4 col-sm-6">
+										<div class="sc-product-item thumbnail">
+											<img data-name="product_image" src="Images/decorations/flowers_thumbnail.jpg" alt="...">
+											<div class="caption">
+												<h4 data-name="product_name">Painted Flowers </h4>
+												<p data-name="product_desc">Painted flower vase.Acrylic</p>
+
+												<hr class="line">
+												<div>
+													
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+														</label>
+													</div>
+													<div class="form-group2">
+														<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+													</div>
+													<strong class="price pull-left">$35.00</strong>
+
+													<input name="product_price" value="35.00" type="hidden">
+													<input name="product_id" value="148" type="hidden">
+													<button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+										</div>
+									</div>
+									<!--Next Product-->
+									<div class="col-md-4 col-sm-6">
+										<div class="sc-product-item thumbnail">
+											<img data-name="product_image" src="Images/decorations/quilled_shell_thumbnail.jpg" alt="...">
+											<div class="caption">
+												<h4 data-name="product_name">Quilled Shell </h4>
+												<p data-name="product_desc">Paper crafted sea shell</p>
+
+												<hr class="line">
+												<div>
+													
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+														</label>
+													</div>
+													<div class="form-group2">
+														<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+													</div>
+													<strong class="price pull-left">$20.00</strong>
+
+													<input name="product_price" value="20.00" type="hidden">
+													<input name="product_id" value="149" type="hidden">
+													<button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+										</div>
+									</div>
+									<!--Next Product-->
+									<div class="col-md-4 col-sm-6">
+										<div class="sc-product-item thumbnail">
+											<img data-name="product_image" src="Images/decorations/macrame_thumbnail.jpg" alt="...">
+											<div class="caption">
+												<h4 data-name="product_name">Macrame </h4>
+												<p data-name="product_desc">Macrame dream catcher</p>
+
+												<hr class="line">
+												<div>
+													
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+														</label>
+													</div>
+													<div class="form-group2">
+														<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+													</div>
+													<strong class="price pull-left">$14.99</strong>
+
+													<input name="product_price" value="14.00" type="hidden">
+													<input name="product_id" value="150" type="hidden">
+													<button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+										</div>
+									</div>
+									<!--Next Product-->
+									<div class="col-md-4 col-sm-6">
+										<div class="sc-product-item thumbnail">
+											<img data-name="product_image" src="Images/jewelry/pink_necklace_thumbnail.jpg" alt="...">
+											<div class="caption">
+												<h4 data-name="product_name">Pink Necklace </h4>
+												<p data-name="product_desc">Made with synthetic beads</p>
+
+												<hr class="line">
+												<div>
+													
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+														</label>
+													</div>
+													<div class="form-group2">
+														<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+													</div>
+													<strong class="price pull-left">$24.99</strong>
+
+													<input name="product_price" value="24.99" type="hidden">
+													<input name="product_id" value="151" type="hidden">
+													<button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+										</div>
+									</div>
+									<!--Next Product-->
+									<div class="col-md-4 col-sm-6">
+										<div class="sc-product-item thumbnail">
+											<img data-name="product_image" src="Images/jewelry/emerald_necklace_thumbnail.jpg" alt="...">
+											<div class="caption">
+												<h4 data-name="product_name">Emerald Necklace </h4>
+												<p data-name="product_desc">Made with glass beads</p>
+
+												<hr class="line">
+												<div>
+													
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+														</label>
+													</div>
+													<div class="form-group2">
+														<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+													</div>
+													<strong class="price pull-left">$24.99</strong>
+
+													<input name="product_price" value="24.99" type="hidden">
+													<input name="product_id" value="152" type="hidden">
+													<button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+										</div>
+									</div>
+									<!--Next Product-->
+									<div class="col-md-4 col-sm-6">
+										<div class="sc-product-item thumbnail">
+											<img data-name="product_image" src="Images/jewelry/turquoise_necklace_thumbnail.jpg" alt="...">
+											<div class="caption">
+												<h4 data-name="product_name">Turquoise Necklace </h4>
+												<p data-name="product_desc">Made with natural beads</p>
+
+												<hr class="line">
+												<div>
+													
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+														</label>
+													</div>
+													<div class="form-group2">
+														<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+													</div>
+													<strong class="price pull-left">$24.99</strong>
+
+													<input name="product_price" value="24.99" type="hidden">
+													<input name="product_id" value="153" type="hidden">
+													<button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+										</div>
+									</div>
+									<!-- END PRODUCTS -->
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<aside class="col-md-4">
+						
+						<!-- Paypal Submit URL : https://www.paypal.com/cgi-bin/webscr -->
+						<!-- Paypal Sandbox Submit URL: https://www.sandbox.paypal.com/cgi-bin/webscr -->
+
+						<!-- Paypal Cart submit form -->
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="POST">
+							<!-- SmartCart element -->
+							<div id="smartcart"></div>
+
+							<!-- Paypal required info, Please update based on your details -->
+							<input name="business" value="dipumedayil@gmail.com" type="hidden">
+							<input name="currency_code" value="USD" type="hidden">
+							<input name="return" value="http://www.yourdomain.com/yoursuccessurl" type="hidden">
+							<input name="cancel_return" value="http://www.yourdomain.com/yourcancelurl" type="hidden">
+
+							<input name="cmd" value="_cart" type="hidden">
+							<input name="upload" value="1" type="hidden">
+						</form>
+						<br>
+						<a class="continue" href="success.html"> Checkout </a><span>&nbsp;</span>
+						<a class="continue" href="products.html"> Continue Shopping </a>
+					</aside>
+
+				</div>
+			</section>
+			<script src="Js/hamburgerMenu.js"></script>
+			<script src="Js/loginModal.js"></script>
+			 <script src="Js/jquery.smartCart.js" type="text/javascript"></script>		
+			<script src="Js/cart.js" type="text/javascript"></script>		
+		</main>
+		</div>
+		<footer>
+			
+			<p>&copy;2021 South Bay Crafters.</p>
+			<script src="Js/currentDate.js"></script>
+		</footer>
+	
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<Title>FAQ: SouthBay Crafters</Title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="Js/jquery-3.6.0.js"></script>
+	<script src="Js/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="CSS/jquery-ui.min.css">
+	<link rel="stylesheet" href="style.css">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<script src="https://use.fontawesome.com/3aa07dfa6e.js"></script>
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"><!--for Hamburger Menu-->
+	<link rel="stylesheet" href="css/hamburgerStyle.css">	
+	
+</head>
+<body>
+	<div id="container">
+		<div id="mHeader" class="mobile" >
+			<h1>South Bay Crafters</h1>
+			<div class="humburger" id="hambuger_menu">
+			  <div class="line"></div>
+			  <div class="line"></div>
+			  <div class="line"></div>
+			</div>
+			<!--main menu body-->
+			<section class="menu_body" id="menubody">
+			  <div class="menu_body__item_wrapper">
+			<!--    menu list-->
+				<ul class="menu_list">				 
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>			
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li id="signIn">Sign In</li>					
+
+				</ul>
+			  </div>
+			</section>
+		</div>
+		<header class="tab-desk">
+			<h1>South Bay Crafters</h1>
+			<button id="myBtn">Sign In</button>
+			
+		</header>
+		<nav class="tab-desk">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>			
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>			
+		</nav>
+		<main>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<form>
+						<p>
+							<label for="username">Username:</label>
+							<input type="text" name="username" id="username">
+						</p>
+						<p>
+							<label for="password">Password: </label>
+							<input type="text" name="password" id="password">
+						</p>
+						<p class="button">
+							<input type="submit" name="button" id="button" value="Submit" >
+						</p>
+					</form>
+				 </div>
+			</div>
+			<div id="accordion" style="padding: 0 15%">
+			  <h2>Can I make a request to replicate an item I already have?</h2>
+				<div>
+				  
+				  <p>Please send us a picture of your item and our crafters will work on recreating it subject to licensing restrictions.</p>
+				</div>
+				<h2>I have placed my order and have not received my product yet.</h2>
+				<div>
+				  
+				  <p>Please submit a request through the contact form with your order number and we will get back to you.</p>
+				</div>
+				<h2>Who pays for the return shipping?</h2>
+				<div>
+				  
+				  <p>South Bay Crafters are fully responsible for return shipping.</p>
+				</div>
+			</div>
+			<script src="Js/hamburgerMenu.js"></script>
+			<script src="Js/loginModal.js"></script>
+			<script src="Js/faq.js"></script>				
+		</main>
+		</div>
+		<footer>
+			<ul id="footerNav" class="tab-desk">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>	
+			<p>&copy;2021 South Bay Crafters.</p>
+			<script src="Js/currentDate.js"></script>
+		</footer>
+	
+</body>
+</html>
